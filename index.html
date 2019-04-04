@@ -1,86 +1,99 @@
-<!doctype html> <!-- index.html -->
-<html>
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <style>
-  div#green {color:green;}
-  div#black {color:black;}
-  </style>
-  <style>
-  div#div1 { border-style:solid; border-width: 1px; border-color:blue; }
-  div#div2 { border-style:solid; border-width: 1px; border-color:blue; }
-  div#div3 { border-style:solid; border-width: 1px; border-color:blue; }
-  div#div4 { border-style:solid; border-width: 1px; border-color:blue; }
-  </style>
-  <title>리스트 예제</title>
-  </head>
-  <body>
-  <div id="green">
-  <h1 id="aList">이규현</h1>
-  </green>
-  
-  <div id="black">
-  <div id="div1">
-  <ul style="list-style-type:square">
-  <h4> <li>1주차 (2019.03.04 ~ 2019.03.08)</h4>
-      <ol><p>
-<li><a href="https://leegyuhyeon1.github.io/week1/Javascript.html" target="_blank">자바스크립트환영</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week1/Data.html" target="_blank">공공데이터포털</a></li><p>
-</ol></p></div>
+<!doctype html> <!-- basicSemantic2.html -->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+  header, nav, section, article, aside, footer
+  {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
+  header img{width:990px; height:200px;}
+  section{width:1000px; float:left;}
+  section section{width:725px; float:left;}
+  aside{width:150px; float:left; line-height:30px;}
+  footer{height:50px; clear:both;}
+  nav ul{margin:0; padding:0;}
+  nav ul li{display:inline; margin:5px;}
+  aside ul{margin:0; padding:0;}
+  aside ul li{display:block; margin:5px;}
+  aside ul li img{width:50px; height:50px;}
+  a:link {color:blue; background-color:transparent; text-decoration:none;}
+</style>
+<title>HTML5 시멘틱 실습</title></head>
+<body>
+  <header>
+    <h2>이규현님, 실습을 환영합니다</h2>
+    <img src="https://LeeGyuHyeon1.github.io/week4/scene.png" alt="히말라야"/>
+  </header>
+  <nav>
+    <ul>
+    <li><a href="#chapter1">1주차</a></li>
+    <li><a href="#chapter2">2주차</a></li>
+    <li><a href="#chapter3">3주차</a></li>
+    <li><a href="#chapter4">4주차</a></li>
+    <li><a href="#chapter5">5주차</a></li></ul>
+  </nav>
+  <section> <!-- main -->
+  <section><h3 id="chapter1">1주차 (2019.03.04 ~ 2019.03.08</h3>
+    <li><a href="https://leegyuhyeon1.github.io/week1/Javascript.html" target="_blank">1.자바스크립트환영</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week1/Data.html" target="_blank">2.공공데이터포털</a></li></p>
+  </section>
 
-  <div id="div2">
-  <ul style="list-style-type:square">
-    <h4> <li>2주차 (2019.03.11 ~ 2019.03.15)</h4>
-      <ol><p>
-<li><a href="https://leegyuhyeon1.github.io/week2/basicHtml.html" target="_blank">basicHTML(애국가)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week2/globalEvent.html" target="_blank">globalEvent(클릭)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week2/globalAttr.html" target="_blank">globalAttr(애국가 컬러 버전)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week2/koreaAnthem.html" target="_blank">koreaAnthem(애국가 풀버전)</a></li></p>
-      </ol></p></div>
-      
-    <div id="div3">
-    <ul style="list-style-type:square">
-    <h4> <li>3주차 (2019.03.18 ~ 2019.03.22)</h4>
-      <ol><p>
-<li><a href="https://leegyuhyeon1.github.io/week3/headBasic1.html" target="_blank">headBasic1(애국가)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/bodyBasic.html" target="_blank">bodyBasic(bodyBasic코드)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicHeading.html" target="_blank">basicHeading(글씨크기)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicPBRHr.html" target="_blank">basicPBRHr(HTML문서설명)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicChar.html" target="_blank">basicChar(글꼴관련요소)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem3.html" target="_blank">koreaAnthem3(애국가3)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem4.html" target="_blank">koreaAnthem4(애국가4)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicList.html" target="_blank">basicList(목록태그)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicDList.html" target="_blank">basicDList(기술목록태그)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem5.html" target="_blank">koreaAnthem5(애국가5)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem6.html" target="_blank">koreaAnthem6(애국가6)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/basicTable1.html" target="_blank">basicTable1(테이블 테스트 실습)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/tableSpan.html" target="_blank">tableSpan(테이블 스팬 실습)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/advTable.html" target="_blank">advTable(고급 테이블 실습)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/advTable1.html" target="_blank">advTable1(고급 테이블 실습 응용ver)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/tableHw.html" target="_blank">tableHw(테이블 태그)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week3/MyTimetable.html" target="_blank">MyTimetable(2학년 1학기 시간표)</a></li></p>
-      </ol></p></div>
-      
-    <div id="div4">
-    <ul style="list-style-type:square">
-    <h4> <li> <a href="https://leegyuhyeon1.github.io/week4-1/4-1.html" target="_blank">4주차 (2019.03.25 ~ 2019.03.29)</a></li></h4>
-      <ol><p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/tag_video.html" target="_blank">tag_video(공간분할1)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/basicPDivSpan.html" target="_blank">basicPDivSpan(공간분할2)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/basicDiv.html" target="_blank">basicDiv(공간분할3)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/advDiv.html" target="_blank">advDiv(공간분할4)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/basicSemantic.html" target="_blank">basicSemantic(공간분할5)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-1/basicModel.html" target="_blank">basicModel(공간분할6)</a></li></p>
+  <section><h3 id="chapter2">2주차 (2019.03.11 ~ 2019.03.15)</h3>
+    <li><a href="https://leegyuhyeon1.github.io/week2/basicHtml.html" target="_blank">basicHTML(애국가)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week2/globalEvent.html" target="_blank">globalEvent(클릭)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week2/globalAttr.html" target="_blank">globalAttr(애국가 컬러 버전)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week2/koreaAnthem.html" target="_blank">koreaAnthem(애국가 풀버전)</a></li></p>
+  </section>
 
-<li><a href="https://leegyuhyeon1.github.io/week4-2/anchor1.html" target="_blank">anchor1(앵커1)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-2/advAnchor.html" target="_blank">advAnchor(앵커2)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-2/basicSemantic1.html" target="_blank">basicSemantic1(앵커3)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-2/basicImage.html" target="_blank">basicImage(이미지1)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-2/basicSemantic2.html" target="_blank">basicSemantic2(이미지2)</a></li></p>
-<li><a href="https://leegyuhyeon1.github.io/week4-2/ismap.html" target="_blank">ismap+form_action.jsp(이미지3)</a></li></p>
-      </ol></p></div></black>
-    </li>
-  </ul><hr/>
-</body
+
+  <section><h3 id="chapter3">3주차 (2019.03.18 ~ 2019.03.22)</h3>
+    <li><a href="https://leegyuhyeon1.github.io/week3/headBasic1.html" target="_blank">headBasic1(애국가)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/bodyBasic.html" target="_blank">bodyBasic(bodyBasic코드)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicHeading.html" target="_blank">basicHeading(글씨크기)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicPBRHr.html" target="_blank">basicPBRHr(HTML문서설명)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicChar.html" target="_blank">basicChar(글꼴관련요소)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem3.html" target="_blank">koreaAnthem3(애국가3)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem4.html" target="_blank">koreaAnthem4(애국가4)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicList.html" target="_blank">basicList(목록태그)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicDList.html" target="_blank">basicDList(기술목록태그)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem5.html" target="_blank">koreaAnthem5(애국가5)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/koreaAnthem6.html" target="_blank">koreaAnthem6(애국가6)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/basicTable1.html" target="_blank">basicTable1(테이블 테스트 실습)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/tableSpan.html" target="_blank">tableSpan(테이블 스팬 실습)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/advTable.html" target="_blank">advTable(고급 테이블 실습)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/advTable1.html" target="_blank">advTable1(고급 테이블 실습 응용ver)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/tableHw.html" target="_blank">tableHw(테이블 태그)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week3/MyTimetable.html" target="_blank">MyTimetable(2학년 1학기 시간표)</a></li></p>
+  </section>
+
+
+  <section><h3 id="chapter4">4주차 (2019.03.25 ~ 2019.03.29)</h3>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/tag_video.html" target="_blank">tag_video(공간분할1)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/basicPDivSpan.html" target="_blank">basicPDivSpan(공간분할2)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/basicDiv.html" target="_blank">basicDiv(공간분할3)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/advDiv.html" target="_blank">advDiv(공간분할4)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/basicSemantic.html" target="_blank">basicSemantic(공간분할5)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-1/basicModel.html" target="_blank">basicModel(공간분할6)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/anchor1.html" target="_blank">anchor1(앵커1)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/advAnchor.html" target="_blank">advAnchor(앵커2)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/basicSemantic1.html" target="_blank">basicSemantic1(앵커3)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/basicImage.html" target="_blank">basicImage(이미지1)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/basicSemantic2.html" target="_blank">basicSemantic2(이미지2)</a></li></p>
+    <li><a href="https://leegyuhyeon1.github.io/week4-2/ismap.html" target="_blank">ismap+form_action.jsp(이미지3)</a></li></p>
+  </section>
+
+  <section><h3 id="chapter5">5주차 (2019.04.01 ~ 2019.04.05)</h3>
+
+
+  </section>
+  </section> <!-- /main -->
+  <aside>
+    <ul>
+      <li><a href=https://www.google.com><img src="https://LeeGyuHyeon1.github.io/week4/googlePlus.png" alt="구글"/></a></li>
+      <li><a href=https://www.facebook.com><img src="https://LeeGyuHyeon1.github.io/week4/facebookOne.png" alt="페이스북"/></a></li>
+      <li><a href=https://www.twitter.com><img src="https://LeeGyuHyeon1.github.io/week4/twitterYou.png" alt="트위터"/></a></li>
+    </ul>
+  </aside>
+  <footer>
+    <p>&copy;20XX Made by Korea. All rights reserved.</p>
+  </footer>
+  </body>
 </html>

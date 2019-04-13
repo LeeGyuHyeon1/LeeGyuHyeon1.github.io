@@ -1,0 +1,166 @@
+<!doctype html> <!-- FormMovieSelect.html -->
+<html><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<style>
+nav
+{border:5px solid black; margin:10px; padding:15px; width:700px}
+nav ul{margin:0; padding:0;}
+nav ul li{display:inline; margin:5px}
+</style>
+<style> table, tr, th, td {
+  border:2px solid black; border-collapse:collapse;
+}
+</style>
+<style>
+   .subject1 {background-color:green;}
+</style>
+<style>
+   .subject2 {background-color:gray;}
+</style>
+<style>
+  .subject3 {background-color:lightblue;}
+</style><!-- border-collapse:collapse 단선으로, 반대는 separate -->
+<title>폼 학습</title></head>
+<body>
+<nav class="subject3">
+<h2>=================영화관 표=================</h2><section>
+<form action="https://leegyuhyeon1.github.io/week6-3/MovieSelect.jsp" method="post">
+<fieldset>
+<br/>
+<legend>원하는 영화 예매</legend>
+  
+  
+  <label for="moviex">영화:</label>
+  <select id="moviex" name="movie">
+  <option value="All">All</option>
+  <option value="국내">국내</option>
+  <option value="해외">해외</option></select>
+
+  <label for="genrex">장르:</label>
+  <select id="genrex" name="genre">
+  <option value="All">All</option>
+  <option value="액션">액션</option>
+  <option value="SF">SF</option>
+  <option value="드라마">드라마</option>
+  <option value="코미디">코미디</option>
+  <option value="공포/스릴러">공포/스릴러</option></select>
+
+  <label for="ratingx">등급:</label>
+  <select id="ratingx" name="rating">
+  <option value="All">All</option>
+  <option value="전체">전체관람가</option>
+  <option value="12세">12세 관람가</option>
+  <option value="15세">15세 관람가</option>
+  <option value="18세">청소년 관람불가</option></select>
+  
+  <label for="releasex">개봉 년도:</label>
+  <select id="releasex" name="release">
+  <option value="All">All</option>
+  <option value="All">2017년 ~ 현재</option>
+  <option value="전체">2014년 ~ 2016년</option>
+  <option value="12세">2011년 ~ 2013년</option>
+  <option value="15세">2010년 이전</option></select>
+  <br/><br/><br/></fieldset>
+  <fieldset>
+<legend>좌석 선택</legend>
+<br/>
+<table>
+<thead>
+<tr>
+  <th class="subject1">비상구</th>
+  <th colspan="10">스크린</th>
+  <th class="subject1">비상구</th>
+</thead>
+<tr><th colspan="12", class="subject2">통로</th></tr>
+<tr></tr>
+<tr>
+  <th>A1<input type="checkbox" name="seat"></th>
+  <th>A2<input type="checkbox" name="seat"></th>
+  <th rowspan="7", class="subject2">통로</th>
+  <th>A3<input type="checkbox" name="seat"></th>
+  <th>A4<input type="checkbox" name="seat"></th>
+  <th>A5<input type="checkbox" name="seat"></th>
+  <th>A6<input type="checkbox" name="seat"></th>
+  <th>A7<input type="checkbox" name="seat"></th>
+  <th>A8<input type="checkbox" name="seat"></th>
+  <th rowspan="7", class="subject2">통로</th>
+  <th>A9<input type="checkbox" name="seat"></th>
+  <th>A10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th>B1<input type="checkbox" name="seat"></th>
+  <th>B2<input type="checkbox" name="seat"></th>
+  <th>B3<input type="checkbox" name="seat"></th>
+  <th>B4<input type="checkbox" name="seat"></th>
+  <th>B5<input type="checkbox" name="seat"></th>
+  <th>B6<input type="checkbox" name="seat"></th>
+  <th>B7<input type="checkbox" name="seat"></th>
+  <th>B8<input type="checkbox" name="seat"></th> 
+  <th>B9<input type="checkbox" name="seat"></th>
+  <th>B10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th>C1<input type="checkbox" name="seat"></th>
+  <th>C2<input type="checkbox" name="seat"></th>
+  <th>C3<input type="checkbox" name="seat"></th>
+  <th>C4<input type="checkbox" name="seat"></th>
+  <th>C5<input type="checkbox" name="seat"></th>
+  <th>C6<input type="checkbox" name="seat"></th>
+  <th>C7<input type="checkbox" name="seat"></th>
+  <th>C8<input type="checkbox" name="seat"></th> 
+  <th>C9<input type="checkbox" name="seat"></th>
+  <th>C10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th>D1<input type="checkbox" name="seat"></th>
+  <th>D2<input type="checkbox" name="seat"></th>
+  <th>D3<input type="checkbox" name="seat"></th>
+  <th>D4<input type="checkbox" name="seat"></th>
+  <th>D5<input type="checkbox" name="seat"></th>
+  <th>D6<input type="checkbox" name="seat"></th>
+  <th>D7<input type="checkbox" name="seat"></th>
+  <th>D8<input type="checkbox" name="seat"></th> 
+  <th>D9<input type="checkbox" name="seat"></th>
+  <th>D10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th>E1<input type="checkbox" name="seat"></th>
+  <th>E2<input type="checkbox" name="seat"></th>
+  <th>E3<input type="checkbox" name="seat"></th>
+  <th>E4<input type="checkbox" name="seat"></th>
+  <th>E5<input type="checkbox" name="seat"></th>
+  <th>E6<input type="checkbox" name="seat"></th>
+  <th>E7<input type="checkbox" name="seat"></th>
+  <th>E8<input type="checkbox" name="seat"></th> 
+  <th>E9<input type="checkbox" name="seat"></th>
+  <th>E10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th>F1<input type="checkbox" name="seat"></th>
+  <th>F2<input type="checkbox" name="seat"></th>
+  <th>F3<input type="checkbox" name="seat"></th>
+  <th>F4<input type="checkbox" name="seat"></th>
+  <th>F5<input type="checkbox" name="seat"></th>
+  <th>F6<input type="checkbox" name="seat"></th>
+  <th>F7<input type="checkbox" name="seat"></th>
+  <th>F8<input type="checkbox" name="seat"></th> 
+  <th>F9<input type="checkbox" name="seat"></th>
+  <th>F10<input type="checkbox" name="seat"></th>
+</tr>
+<tr>
+  <th colspan="2">VIP-1<input type="checkbox" name="seat"></th>
+  <th colspan="2">VIP-2<input type="checkbox" name="seat"></th>
+  <th colspan="2">VIP-3<input type="checkbox" name="seat"></th>
+  <th colspan="2">VIP-4<input type="checkbox" name="seat"></th>
+  <th colspan="2">VIP-5<input type="checkbox" name="seat"></th>
+</tr>
+</table><br/>
+</fieldset>
+<fieldset><h3>
+이대로 등록하시겠습니까?
+  <button type="submit">예</button>
+  <input type="reset" name="reset1" value="아니오"/></h3>(*아니오 버튼을 누르면 모든 선택이 초기화됩니다.*)
+</fieldset><br/>
+<img src="https://leegyuhyeon1.github.io/week4/movie.png" width="700" height="300"><br/>
+</nav></form></section>
+</body></html>

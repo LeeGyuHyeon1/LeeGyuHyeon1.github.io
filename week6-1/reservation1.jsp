@@ -10,6 +10,6 @@
            인원: <%=request.getParameter("personx")%><br/></h2>
     <h2>약속 날짜 시간</h2>
     <h2>날짜:<%=request.getParameter("datex")%>,
-           시간:<%=request.getParameter("timex")%><br/></h2
+        시간:<%=request.getParameter("timex")%><br/></h2>
   </section>
 </section></body></html>

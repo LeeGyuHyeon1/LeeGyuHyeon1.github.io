@@ -11,5 +11,15 @@
     <h2>약속 날짜 시간</h2>
     <h2>날짜:<%=request.getParameter("datex")%>,
            시간:<%=request.getParameter("timex")%><br/></h2>
+    <h2>시간:<%=request.getParameter("mealtime")%><br/></h2>
+      <% String [] uMeal = request.getParameterValues("meal");%>
+    <h2>식사:
+    <%
+      for(int i = 0; i < uMeal.length; i++) {
+          out.println(uMeal[i]);
+      }
+    }
+    %>
+    </h2>
   </section>
 </section></body></html>

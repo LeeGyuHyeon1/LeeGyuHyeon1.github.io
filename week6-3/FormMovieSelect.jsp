@@ -8,7 +8,7 @@
 <section>
   <h2>JSP form</h2>
   <section>
-    <h2>영화:<%=request.getParameter("movie)%><br/></h2>
+    <h2>영화:<%=request.getParameter("movi)%><br/></h2>
     <h2>장르:<%=request.getParameter("genre")%><br/></h2>
     <h2>등급:<%=request.getParameter("rating")%><br/></h2>
     <h2>개봉 년도:<%=request.getParameter("release")%><br/></h2>

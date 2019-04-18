@@ -3,7 +3,7 @@
 <!doctype html><!-- member1.jsp -->
 <html><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
-<link rel="stylesheet" href="https://LeeGyuHyeon1.github.io/week7-2/sample1.css"/>
+<link rel="stylesheet" href="https://LeeGyuHyeon1.github.io/week7-2/sample.css"/>
 <title>객체 선택 실습</title></head>
 <body><header><h2>실습을 환영합니다.</h2></header>
 <nav><ul class="ulClass">

@@ -1,0 +1,45 @@
+<!doctype html><!-- login6.html -->
+<html><head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+* {padding: 0; margin: 0;}
+#section0 {
+width: 400px; height: 350px; border: solid 1px lightgray; margin: 15px; padding: 15px; border-radius: 1em; box-shadow: 9px 6px 6px gray;}
+ul {list-style: none;}
+h4 {text-align:center;}
+ul.level_1>li {display: inline-block; line-height: 1.5em;}
+.level_1 span {display: inline-block; width: 100px;}
+.level_1 input {width:110px;}
+.level_1 input[type="checkbox"] {width: 30px;}
+.level_1 button {margin-left:10px; width:70px; height:25px;}
+</style>
+<title>회원가입 양식</title>
+<head><body>
+<section id="section0">
+<h4>회원가입</h4><br/>
+<form action="https://jsptogo.herokuapp/com/jspsrc/memb5.jsp" method="post">
+<ul class="level_1">
+<li><span>아이디</span></li>
+<li><input type="text" name="namex"></li>
+<li><button>중복확인</button></li></ul>
+<ul class="level_1">
+<li><span>비밀번호</span></li>
+<li><input type="password" name="passx"></li></ul>
+<ul class="level_1">
+<li><span>비밀번호확인</span></li>
+<li><input type="password" name="passx"></li></ul>
+<ul class="level_1">
+<li><span>이름</span></li>
+<li><input type="text" name="namex"></li></ul>
+<ul class="level_1">
+<li><span>취미</span></li>
+<li><input type="checkbox" name="hobby" value="fishing">독서</li>
+<li><input type="checkbox" name="hobby" value="fishing">바둑</li>
+<li><input type="checkbox" name="hobby" value="fishing">낚시</li></ul>
+<ul class="level_1">
+<li><span style="float:left">가입인사</span>
+<textarea id="works" name="textareaWord" rows="7" cols="30"></textarea></li></ul><br/>
+<ul class="level_1">
+<li><button style="margin-left:125px">회원가입</button></li>
+<li><button>취소</button></li>
+</ul></form></section></body></head></html>
